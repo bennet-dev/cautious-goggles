@@ -12,6 +12,8 @@ The game is played by connecting letters to create words. Letters can only be co
 The Goal is to use all the letters in as few words as possible.
 
 
+
+
   To Run:
   `npm i`
   `npm run solve`
