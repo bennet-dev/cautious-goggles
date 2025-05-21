@@ -8,13 +8,10 @@ The game is played by connecting letters to create words. Letters can only be co
     B       H
     C       O
       A E Y
-`CASH` is a valid letter sequesnce. As a counter example, `HOME` ia not valid because `H` and `O` share a side and cannot be next to eachother in the letter sequence. 
+`CASH` is a valid letter sequence. As a counter example, `HOME` ia not valid because `H` and `O` share a side and cannot be next to eachother in the letter sequence. 
 
 The Goal is to use all the letters in as few words as possible.
 
-
-
-
-  To Run:
-  `npm i`
-  `npm run solve`
+To Run:
+`npm i`
+`npm run solve`
