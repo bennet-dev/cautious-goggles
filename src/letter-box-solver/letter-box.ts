@@ -1,5 +1,5 @@
-import { difference, last, random } from "lodash";
 import { readFileSync } from "fs";
+import { difference, last, random } from "lodash";
 
 const wordBank: string[] = readFileSync("words.txt", "utf8").split("\n");
 
@@ -23,7 +23,7 @@ const wordFilter = (word: string, letterRows: string[][]) => {
   return true;
 };
 
-const buildLeterGrah = (words: string[]) => {
+const buildLetterGraph = (words: string[]) => {
   return words.reduce((acc: Record<string, string[]>, word: string) => {
     return {
       ...acc,
@@ -118,7 +118,7 @@ const parallelSearch = async (
 export const solve = async (letterRows: string[][]) => {
   const filteredWords = wordBank.filter((word) => wordFilter(word, letterRows));
 
-  const letterGraph = buildLeterGrah(filteredWords);
+  const letterGraph = buildLetterGraph(filteredWords);
 
   const wordGraph = buildWordGraph(
     filteredWords.filter((word) => wordFilter(word, letterRows)),
